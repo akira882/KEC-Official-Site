@@ -15,109 +15,127 @@ export default function About() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-gray-900">企業情報</h2>
 
-            <div className="bg-gray-50 rounded-lg p-8 mb-8">
-              <table className="w-full">
-                <tbody>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold w-1/3">
-                      会社名
-                    </th>
-                    <td className="py-4 text-gray-900">
-                      株式会社ケーイーシー
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold">
-                      法人番号
-                    </th>
-                    <td className="py-4 text-gray-900">
-                      8180001085783
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold">
-                      所在地
-                    </th>
-                    <td className="py-4 text-gray-900">
-                      〒492-8143<br />
-                      愛知県稲沢市朝府町12番2号
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold">
-                      設立
-                    </th>
-                    <td className="py-4">
-                      <span className="coming-soon-badge">Coming soon</span>
-                      <p className="text-sm text-gray-600 mt-1">設立年月日を掲載予定</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold">
-                      資本金
-                    </th>
-                    <td className="py-4">
-                      <span className="coming-soon-badge">Coming soon</span>
-                      <p className="text-sm text-gray-600 mt-1">資本金を掲載予定</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold">
-                      代表者
-                    </th>
-                    <td className="py-4">
-                      <span className="coming-soon-badge">Coming soon</span>
-                      <p className="text-sm text-gray-600 mt-1">代表者名を掲載予定</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold">
-                      従業員数
-                    </th>
-                    <td className="py-4">
-                      <span className="coming-soon-badge">Coming soon</span>
-                      <p className="text-sm text-gray-600 mt-1">従業員数を掲載予定</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold">
-                      事業内容
-                    </th>
-                    <td className="py-4 text-gray-900">
-                      <ul className="list-disc list-inside space-y-2">
-                        <li>三菱系FA機器の電気工事</li>
-                        <li>三菱系工作機械の電気工事</li>
-                        <li>制御盤の設計・製作</li>
-                        <li>設備メンテナンス・保守</li>
-                      </ul>
-                      <div className="mt-4 placeholder-section">
-                        <p className="text-sm">
-                          <span className="coming-soon-badge mb-1 inline-block">Coming soon</span><br />
-                          その他の事業内容詳細を掲載予定
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold">
-                      TEL
-                    </th>
-                    <td className="py-4">
-                      <span className="coming-soon-badge">Coming soon</span>
-                      <p className="text-sm text-gray-600 mt-1">電話番号を掲載予定</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="text-left py-4 pr-8 text-gray-700 font-semibold">
-                      FAX
-                    </th>
-                    <td className="py-4">
-                      <span className="coming-soon-badge">Coming soon</span>
-                      <p className="text-sm text-gray-600 mt-1">FAX番号を掲載予定</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="bg-gray-50 rounded-lg p-4 md:p-8 mb-8">
+              {/* モバイル・タブレット・PC全対応のレスポンシブレイアウト */}
+              <dl className="space-y-6">
+                {/* 会社名 */}
+                <div className="border-b border-gray-200 pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    会社名
+                  </dt>
+                  <dd className="text-base md:text-lg text-gray-900">
+                    株式会社ケーイーシー
+                  </dd>
+                </div>
+
+                {/* 法人番号 */}
+                <div className="border-b border-gray-200 pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    法人番号
+                  </dt>
+                  <dd className="text-base md:text-lg text-gray-900">
+                    8180001085783
+                  </dd>
+                </div>
+
+                {/* 所在地 */}
+                <div className="border-b border-gray-200 pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    所在地
+                  </dt>
+                  <dd className="text-base md:text-lg text-gray-900">
+                    〒492-8143<br />
+                    愛知県稲沢市朝府町12番2号
+                  </dd>
+                </div>
+
+                {/* 設立 */}
+                <div className="border-b border-gray-200 pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    設立
+                  </dt>
+                  <dd>
+                    <span className="coming-soon-badge">Coming soon</span>
+                    <p className="text-xs md:text-sm text-gray-600 mt-1">設立年月日を掲載予定</p>
+                  </dd>
+                </div>
+
+                {/* 資本金 */}
+                <div className="border-b border-gray-200 pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    資本金
+                  </dt>
+                  <dd>
+                    <span className="coming-soon-badge">Coming soon</span>
+                    <p className="text-xs md:text-sm text-gray-600 mt-1">資本金を掲載予定</p>
+                  </dd>
+                </div>
+
+                {/* 代表者 */}
+                <div className="border-b border-gray-200 pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    代表者
+                  </dt>
+                  <dd>
+                    <span className="coming-soon-badge">Coming soon</span>
+                    <p className="text-xs md:text-sm text-gray-600 mt-1">代表者名を掲載予定</p>
+                  </dd>
+                </div>
+
+                {/* 従業員数 */}
+                <div className="border-b border-gray-200 pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    従業員数
+                  </dt>
+                  <dd>
+                    <span className="coming-soon-badge">Coming soon</span>
+                    <p className="text-xs md:text-sm text-gray-600 mt-1">従業員数を掲載予定</p>
+                  </dd>
+                </div>
+
+                {/* 事業内容 */}
+                <div className="border-b border-gray-200 pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    事業内容
+                  </dt>
+                  <dd className="text-gray-900">
+                    <ul className="list-disc list-inside space-y-2 text-sm md:text-base">
+                      <li>三菱系FA機器の電気工事</li>
+                      <li>三菱系工作機械の電気工事</li>
+                      <li>制御盤の設計・製作</li>
+                      <li>設備メンテナンス・保守</li>
+                    </ul>
+                    <div className="mt-4 placeholder-section">
+                      <p className="text-xs md:text-sm">
+                        <span className="coming-soon-badge mb-1 inline-block">Coming soon</span><br />
+                        その他の事業内容詳細を掲載予定
+                      </p>
+                    </div>
+                  </dd>
+                </div>
+
+                {/* TEL */}
+                <div className="border-b border-gray-200 pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    TEL
+                  </dt>
+                  <dd>
+                    <span className="coming-soon-badge">Coming soon</span>
+                    <p className="text-xs md:text-sm text-gray-600 mt-1">電話番号を掲載予定</p>
+                  </dd>
+                </div>
+
+                {/* FAX */}
+                <div className="pb-4">
+                  <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
+                    FAX
+                  </dt>
+                  <dd>
+                    <span className="coming-soon-badge">Coming soon</span>
+                    <p className="text-xs md:text-sm text-gray-600 mt-1">FAX番号を掲載予定</p>
+                  </dd>
+                </div>
+              </dl>
             </div>
           </div>
         </div>
