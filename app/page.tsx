@@ -1,74 +1,70 @@
 import Link from 'next/link';
+import YoutubeVideoBackground from '@/components/YoutubeVideoBackground';
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80"
-            alt="工場の自動化設備"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/95 via-primary-800/90 to-primary-900/85"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30"></div>
-        </div>
+        {/* YouTube Video Background with Grayscale Filter */}
+        <YoutubeVideoBackground
+          videoId="oZsWRUBklfI"
+          fallbackImage="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80"
+        />
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 py-20">
           <div className="max-w-5xl mx-auto text-center md:text-left">
             {/* Main Heading */}
-            <div className="mb-8">
-              <p className="text-primary-200 text-lg md:text-xl font-semibold mb-4 tracking-wide uppercase">
+            <div className="mb-8 animate-fade-in-up">
+              <p className="text-yellow-400 text-lg md:text-xl font-semibold mb-4 tracking-wide uppercase drop-shadow-lg">
                 Professional Electrical Engineering
               </p>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-2xl">
                 三菱系FA機器・工作機械の
-                <span className="block mt-2 text-yellow-400">
+                <span className="block mt-2 text-yellow-400 drop-shadow-[0_0_30px_rgba(250,204,21,0.5)]">
                   電気工事のプロフェッショナル
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-primary-50 font-light leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-white font-light leading-relaxed drop-shadow-lg">
                 愛知県稲沢市を拠点に、工場の自動化・生産設備の<br className="hidden md:block" />
                 電気工事を専門に行っています
               </p>
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 max-w-4xl">
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-10 max-w-4xl animate-fade-in-up animation-delay-200">
+              <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
-                <p className="text-primary-100 text-sm">施工実績数</p>
+                <p className="text-white text-sm drop-shadow-md">施工実績数</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
+              <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
-                <p className="text-primary-100 text-sm">創業年数</p>
+                <p className="text-white text-sm drop-shadow-md">創業年数</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
+              <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
                   100%
                 </div>
-                <p className="text-primary-100 text-sm">三菱系専門</p>
+                <p className="text-white text-sm drop-shadow-md">三菱系専門</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
+              <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
-                <p className="text-primary-100 text-sm">有資格者数</p>
+                <p className="text-white text-sm drop-shadow-md">有資格者数</p>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8 animate-fade-in-up animation-delay-300">
               <Link
                 href="/contact"
-                className="group bg-yellow-400 text-gray-900 px-10 py-5 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all duration-300 text-center shadow-2xl hover:shadow-yellow-400/50 transform hover:-translate-y-1"
+                className="group bg-yellow-400 text-gray-900 px-10 py-5 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all duration-300 text-center shadow-2xl hover:shadow-yellow-400/70 transform hover:-translate-y-1 hover:scale-105"
               >
                 <span className="flex items-center justify-center gap-2">
                   お問い合わせ
@@ -79,7 +75,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/services"
-                className="group bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/20 transition-all duration-300 text-center border-2 border-white/50 hover:border-white transform hover:-translate-y-1"
+                className="group bg-white/15 backdrop-blur-md text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/25 transition-all duration-300 text-center border-2 border-white/60 hover:border-white transform hover:-translate-y-1 hover:scale-105 shadow-2xl"
               >
                 <span className="flex items-center justify-center gap-2">
                   サービス詳細
@@ -91,24 +87,24 @@ export default function Home() {
             </div>
 
             {/* Key Points */}
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <div className="flex items-center gap-2 text-primary-100">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start animate-fade-in-up animation-delay-400">
+              <div className="flex items-center gap-2 text-white bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/15 transition-all">
+                <svg className="w-5 h-5 text-yellow-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-sm md:text-base">三菱電機認定施工業者</span>
+                <span className="text-sm md:text-base drop-shadow-md">三菱電機認定施工業者</span>
               </div>
-              <div className="flex items-center gap-2 text-primary-100">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-center gap-2 text-white bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/15 transition-all">
+                <svg className="w-5 h-5 text-yellow-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-sm md:text-base">24時間緊急対応</span>
+                <span className="text-sm md:text-base drop-shadow-md">24時間緊急対応</span>
               </div>
-              <div className="flex items-center gap-2 text-primary-100">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-center gap-2 text-white bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/15 transition-all">
+                <svg className="w-5 h-5 text-yellow-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-sm md:text-base">無料見積もり</span>
+                <span className="text-sm md:text-base drop-shadow-md">無料見積もり</span>
               </div>
             </div>
           </div>
