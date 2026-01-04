@@ -12,9 +12,6 @@ export default function Footer() {
               三菱系FA機器・工作機械の<br />
               電気工事専門企業
             </p>
-            <p className="text-gray-400 text-sm">
-              法人番号: 8180001085783
-            </p>
           </div>
 
           {/* Quick Links */}
@@ -33,7 +30,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services" className="text-gray-400 hover:text-white transition">
-                  サービス・強み
+                  事業内容
                 </Link>
               </li>
               <li>

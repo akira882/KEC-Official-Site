@@ -17,23 +17,22 @@ export default function Home() {
           <div className="max-w-5xl mx-auto text-center md:text-left">
             {/* Main Heading */}
             <div className="mb-8 animate-fade-in-up">
-              <p className="text-yellow-400 text-lg md:text-xl font-semibold mb-4 tracking-wide uppercase drop-shadow-lg">
-                Professional Electrical Engineering
-              </p>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-2xl">
-                三菱系FA機器・工作機械の
+                <span className="block text-yellow-400 drop-shadow-[0_0_30px_rgba(250,204,21,0.5)]">
+                  FAの明日を、
+                </span>
                 <span className="block mt-2 text-yellow-400 drop-shadow-[0_0_30px_rgba(250,204,21,0.5)]">
-                  電気工事のプロフェッショナル
+                  確かな技術で照らす
                 </span>
               </h1>
               <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-white font-light leading-relaxed drop-shadow-lg">
-                愛知県稲沢市を拠点に、工場の自動化・生産設備の<br className="hidden md:block" />
-                電気工事を専門に行っています
+                愛知県稲沢市を拠点に、三菱系FA機器・工作機械の<br className="hidden md:block" />
+                電気工事に特化した専門企業です
               </p>
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-10 max-w-4xl animate-fade-in-up animation-delay-200">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-10 max-w-4xl animate-fade-in-up animation-delay-200">
               <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
@@ -45,12 +44,6 @@ export default function Home() {
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
                 <p className="text-white text-sm drop-shadow-md">創業年数</p>
-              </div>
-              <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
-                  100%
-                </div>
-                <p className="text-white text-sm drop-shadow-md">三菱系専門</p>
               </div>
               <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
@@ -93,12 +86,6 @@ export default function Home() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-sm md:text-base drop-shadow-md">三菱電機認定施工業者</span>
-              </div>
-              <div className="flex items-center gap-2 text-white bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/15 transition-all">
-                <svg className="w-5 h-5 text-yellow-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span className="text-sm md:text-base drop-shadow-md">24時間緊急対応</span>
               </div>
               <div className="flex items-center gap-2 text-white bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/15 transition-all">
                 <svg className="w-5 h-5 text-yellow-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">

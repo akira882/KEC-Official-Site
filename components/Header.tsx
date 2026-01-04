@@ -19,14 +19,14 @@ export default function Header() {
             <Link href="/" className="text-gray-700 hover:text-primary-600 transition">
               ホーム
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-primary-600 transition">
-              会社概要
-            </Link>
             <Link href="/services" className="text-gray-700 hover:text-primary-600 transition">
-              サービス・強み
+              事業内容
             </Link>
             <Link href="/case-studies" className="text-gray-700 hover:text-primary-600 transition">
               施工事例
+            </Link>
+            <Link href="/about" className="text-gray-700 hover:text-primary-600 transition">
+              会社概要
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-primary-600 transition">
               お問い合わせ
@@ -67,18 +67,11 @@ export default function Header() {
               ホーム
             </Link>
             <Link
-              href="/about"
-              className="block py-2 text-gray-700 hover:text-primary-600 transition"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              会社概要
-            </Link>
-            <Link
               href="/services"
               className="block py-2 text-gray-700 hover:text-primary-600 transition"
               onClick={() => setIsMenuOpen(false)}
             >
-              サービス・強み
+              事業内容
             </Link>
             <Link
               href="/case-studies"
@@ -86,6 +79,13 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               施工事例
+            </Link>
+            <Link
+              href="/about"
+              className="block py-2 text-gray-700 hover:text-primary-600 transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              会社概要
             </Link>
             <Link
               href="/contact"
