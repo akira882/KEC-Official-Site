@@ -195,23 +195,70 @@ export default function Home() {
             施工事例
           </h2>
 
-          <div className="placeholder-section max-w-4xl mx-auto">
-            <div className="text-center">
-              <svg className="w-24 h-24 mx-auto mb-4 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p className="text-gray-700 mb-4">
-                <span className="coming-soon-badge mb-2 inline-block">Coming soon</span><br />
-                <strong>施工事例の写真と詳細</strong>
-              </p>
-              <p className="text-gray-600">
-                実際の施工事例（写真、プロジェクト名、施工内容、成果など）を掲載予定です。<br />
-                クライアント様との商談後に、具体的な事例を追加いたします。
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-8">
+            {/* Preview 1 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+              <div className="h-48 overflow-hidden bg-gray-200">
+                <img
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80"
+                  alt="工場の自動化設備"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold mb-2 text-gray-900">FA機器の電気工事</h3>
+                <p className="text-sm text-gray-600">
+                  工場自動化設備の施工事例
+                </p>
+              </div>
+            </div>
+
+            {/* Preview 2 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+              <div className="h-48 overflow-hidden bg-gray-200">
+                <img
+                  src="https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=800&q=80"
+                  alt="産業用ロボットアーム"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold mb-2 text-gray-900">産業用ロボット設置</h3>
+                <p className="text-sm text-gray-600">
+                  ロボットアーム導入の施工事例
+                </p>
+              </div>
+            </div>
+
+            {/* Preview 3 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+              <div className="h-48 overflow-hidden bg-gray-200">
+                <img
+                  src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80"
+                  alt="電気制御盤と配線"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold mb-2 text-gray-900">制御盤の設計・製作</h3>
+                <p className="text-sm text-gray-600">
+                  カスタム制御盤の施工事例
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="placeholder-section max-w-4xl mx-auto mb-8">
+            <p className="text-center text-gray-700">
+              <span className="coming-soon-badge mb-2 inline-block">Coming soon</span><br />
+              <strong>実際の施工事例の詳細情報</strong><br />
+              <span className="text-sm text-gray-600">
+                クライアント様との商談後に、プロジェクト名、施工内容、成果などの詳細情報を追加いたします。
+              </span>
+            </p>
+          </div>
+
+          <div className="text-center">
             <Link
               href="/case-studies"
               className="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-700 transition"
