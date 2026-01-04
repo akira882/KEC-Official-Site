@@ -4,30 +4,123 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-700 to-primary-900 text-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              三菱系FA機器・工作機械の<br />
-              電気工事なら、お任せください
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-primary-100">
-              愛知県稲沢市を拠点に、工場の自動化・生産設備の電気工事を専門に行っています
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80"
+            alt="工場の自動化設備"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/95 via-primary-800/90 to-primary-900/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 py-20">
+          <div className="max-w-5xl mx-auto text-center md:text-left">
+            {/* Main Heading */}
+            <div className="mb-8">
+              <p className="text-primary-200 text-lg md:text-xl font-semibold mb-4 tracking-wide uppercase">
+                Professional Electrical Engineering
+              </p>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
+                三菱系FA機器・工作機械の
+                <span className="block mt-2 text-yellow-400">
+                  電気工事のプロフェッショナル
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-primary-50 font-light leading-relaxed">
+                愛知県稲沢市を拠点に、工場の自動化・生産設備の<br className="hidden md:block" />
+                電気工事を専門に行っています
+              </p>
+            </div>
+
+            {/* Trust Indicators */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 max-w-4xl">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
+                  <span className="coming-soon-badge text-xs">Coming soon</span>
+                </div>
+                <p className="text-primary-100 text-sm">施工実績数</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
+                  <span className="coming-soon-badge text-xs">Coming soon</span>
+                </div>
+                <p className="text-primary-100 text-sm">創業年数</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
+                  100%
+                </div>
+                <p className="text-primary-100 text-sm">三菱系専門</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
+                  <span className="coming-soon-badge text-xs">Coming soon</span>
+                </div>
+                <p className="text-primary-100 text-sm">有資格者数</p>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
               <Link
                 href="/contact"
-                className="bg-white text-primary-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-50 transition text-center"
+                className="group bg-yellow-400 text-gray-900 px-10 py-5 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all duration-300 text-center shadow-2xl hover:shadow-yellow-400/50 transform hover:-translate-y-1"
               >
-                お問い合わせ
+                <span className="flex items-center justify-center gap-2">
+                  お問い合わせ
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
               </Link>
               <Link
                 href="/services"
-                className="bg-primary-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-500 transition text-center border-2 border-white"
+                className="group bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/20 transition-all duration-300 text-center border-2 border-white/50 hover:border-white transform hover:-translate-y-1"
               >
-                サービス詳細
+                <span className="flex items-center justify-center gap-2">
+                  サービス詳細
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
               </Link>
             </div>
+
+            {/* Key Points */}
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <div className="flex items-center gap-2 text-primary-100">
+                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm md:text-base">三菱電機認定施工業者</span>
+              </div>
+              <div className="flex items-center gap-2 text-primary-100">
+                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm md:text-base">24時間緊急対応</span>
+              </div>
+              <div className="flex items-center gap-2 text-primary-100">
+                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm md:text-base">無料見積もり</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+          <div className="flex flex-col items-center gap-2 text-white/70">
+            <span className="text-sm">Scroll</span>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
           </div>
         </div>
       </section>
