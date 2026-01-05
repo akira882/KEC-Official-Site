@@ -181,6 +181,11 @@ npm run build
    - コード分割
    - キャッシング戦略
 
+## サイトデザイン 参考サイト
+ヤマシタ電気株式会社（https://www.yamashita-ele.co.jp/）
+一電機株式会社（https://www.hajimedenki.co.jp/）
+株式会社神戸電機サービス（https://kobe-denki.co.jp/）
+
 ## ライセンス
 
 このプロジェクトは株式会社ケーイーシーの所有物です。
