@@ -13,7 +13,7 @@ export default function About() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900">企業情報</h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900/90/90">企業情報</h2>
 
             <div className="bg-gray-50 rounded-lg p-4 md:p-8 mb-8">
               {/* モバイル・タブレット・PC全対応のレスポンシブレイアウト */}
@@ -23,7 +23,7 @@ export default function About() {
                   <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
                     会社名
                   </dt>
-                  <dd className="text-base md:text-lg text-gray-900">
+                  <dd className="text-base md:text-lg text-gray-900/90/90">
                     株式会社ケーイーシー
                   </dd>
                 </div>
@@ -33,7 +33,7 @@ export default function About() {
                   <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
                     法人番号
                   </dt>
-                  <dd className="text-base md:text-lg text-gray-900">
+                  <dd className="text-base md:text-lg text-gray-900/90/90">
                     8180001085783
                   </dd>
                 </div>
@@ -43,7 +43,7 @@ export default function About() {
                   <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
                     所在地
                   </dt>
-                  <dd className="text-base md:text-lg text-gray-900">
+                  <dd className="text-base md:text-lg text-gray-900/90/90">
                     〒492-8143<br />
                     愛知県稲沢市朝府町12番2号
                   </dd>
@@ -98,7 +98,7 @@ export default function About() {
                   <dt className="text-sm md:text-base font-semibold text-gray-700 mb-2">
                     事業内容
                   </dt>
-                  <dd className="text-gray-900">
+                  <dd className="text-gray-900/90/90">
                     <ul className="list-disc list-inside space-y-2 text-sm md:text-base">
                       <li>三菱系FA機器の電気工事</li>
                       <li>三菱系工作機械の電気工事</li>
@@ -145,7 +145,7 @@ export default function About() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">企業理念</h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900/90 text-center">企業理念</h2>
 
             <div className="placeholder-section">
               <div className="text-center mb-6">
@@ -167,7 +167,7 @@ export default function About() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">代表メッセージ</h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900/90 text-center">代表メッセージ</h2>
 
             <div className="placeholder-section">
               <div className="text-center mb-6">
@@ -192,7 +192,7 @@ export default function About() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">沿革</h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900/90 text-center">沿革</h2>
 
             <div className="placeholder-section">
               <div className="text-center mb-6">
@@ -217,7 +217,7 @@ export default function About() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">保有資格・認証</h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900/90 text-center">保有資格・認証</h2>
 
             <div className="placeholder-section">
               <div className="text-center mb-6">
@@ -242,10 +242,10 @@ export default function About() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">アクセス</h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900/90 text-center">アクセス</h2>
 
             <div className="bg-white p-8 rounded-lg shadow-md mb-6">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">株式会社ケーイーシー</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900/90/90">株式会社ケーイーシー</h3>
               <p className="text-gray-700 mb-4">
                 〒492-8143<br />
                 愛知県稲沢市朝府町12番2号

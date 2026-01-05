@@ -37,7 +37,7 @@ export default function CaseStudies() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">施工事例 #1</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900/90/90">施工事例 #1</h3>
                 <p className="text-sm text-gray-600 mb-4">
                   プロジェクト名、業種、施工内容の概要を掲載予定
                 </p>
@@ -68,7 +68,7 @@ export default function CaseStudies() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">施工事例 #2</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900/90/90">施工事例 #2</h3>
                 <p className="text-sm text-gray-600 mb-4">
                   プロジェクト名、業種、施工内容の概要を掲載予定
                 </p>
@@ -99,7 +99,7 @@ export default function CaseStudies() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">施工事例 #3</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900/90/90">施工事例 #3</h3>
                 <p className="text-sm text-gray-600 mb-4">
                   プロジェクト名、業種、施工内容の概要を掲載予定
                 </p>
@@ -130,7 +130,7 @@ export default function CaseStudies() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">施工事例 #4</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900/90/90">施工事例 #4</h3>
                 <p className="text-sm text-gray-600 mb-4">
                   プロジェクト名、業種、施工内容の概要を掲載予定
                 </p>
@@ -161,7 +161,7 @@ export default function CaseStudies() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">施工事例 #5</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900/90/90">施工事例 #5</h3>
                 <p className="text-sm text-gray-600 mb-4">
                   プロジェクト名、業種、施工内容の概要を掲載予定
                 </p>
@@ -192,7 +192,7 @@ export default function CaseStudies() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">施工事例 #6</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900/90/90">施工事例 #6</h3>
                 <p className="text-sm text-gray-600 mb-4">
                   プロジェクト名、業種、施工内容の概要を掲載予定
                 </p>
@@ -221,7 +221,7 @@ export default function CaseStudies() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="placeholder-section">
-              <h2 className="text-2xl font-bold mb-6 text-center text-gray-900">
+              <h2 className="text-2xl font-bold mb-6 text-center text-gray-900/90/90">
                 施工事例に掲載する情報
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -264,7 +264,7 @@ export default function CaseStudies() {
       {/* Categories */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-900/90 mb-12">
             施工事例カテゴリー（予定）
           </h2>
 
@@ -275,7 +275,7 @@ export default function CaseStudies() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-900">FA機器</h3>
+              <h3 className="font-bold text-gray-900/90/90">FA機器</h3>
               <p className="text-sm text-gray-600 mt-2">
                 <span className="coming-soon-badge text-xs">Coming soon</span>
               </p>
@@ -288,7 +288,7 @@ export default function CaseStudies() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-900">工作機械</h3>
+              <h3 className="font-bold text-gray-900/90/90">工作機械</h3>
               <p className="text-sm text-gray-600 mt-2">
                 <span className="coming-soon-badge text-xs">Coming soon</span>
               </p>
@@ -300,7 +300,7 @@ export default function CaseStudies() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-900">制御盤</h3>
+              <h3 className="font-bold text-gray-900/90/90">制御盤</h3>
               <p className="text-sm text-gray-600 mt-2">
                 <span className="coming-soon-badge text-xs">Coming soon</span>
               </p>
@@ -312,7 +312,7 @@ export default function CaseStudies() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-900">メンテナンス</h3>
+              <h3 className="font-bold text-gray-900/90/90">メンテナンス</h3>
               <p className="text-sm text-gray-600 mt-2">
                 <span className="coming-soon-badge text-xs">Coming soon</span>
               </p>

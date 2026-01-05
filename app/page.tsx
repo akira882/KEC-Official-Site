@@ -1,55 +1,106 @@
 import Link from 'next/link';
-import YoutubeVideoBackground from '@/components/YoutubeVideoBackground';
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* YouTube Video Background with Grayscale Filter */}
-        <YoutubeVideoBackground
-          videoId="oZsWRUBklfI"
-          fallbackImage="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80"
-        />
+        {/* Background Image - 最高品質のファーストビュー */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* 背景画像 - 透過処理で美しさを最大限に活かす */}
+          <img
+            src="/images/hero-background.png"
+            alt="電気工事の作業現場"
+            className="w-full h-full object-cover"
+            style={{
+              // 画像の美しさを保ちつつ、テキストの可読性を確保
+              opacity: 0.85,
+            }}
+          />
+          {/* テキストエリアの可読性を向上させるための暗いオーバーレイ */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
+          {/* 中央部分のテキストエリアをさらに暗くしてコントラストを向上 */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/40 to-black/30"></div>
+        </div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 py-20">
           <div className="max-w-5xl mx-auto text-center md:text-left">
             {/* Main Heading */}
             <div className="mb-8 animate-fade-in-up">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-2xl">
-                <span className="block text-yellow-400 drop-shadow-[0_0_30px_rgba(250,204,21,0.5)]">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
+                <span
+                  className="block"
+                  style={{
+                    textShadow:
+                      '0 4px 30px rgba(0, 0, 0, 1), 0 2px 10px rgba(0, 0, 0, 0.9), 2px 2px 6px rgba(0, 0, 0, 1)',
+                  }}
+                >
                   FAの明日を、
                 </span>
-                <span className="block mt-2 text-yellow-400 drop-shadow-[0_0_30px_rgba(250,204,21,0.5)]">
+                <span
+                  className="block mt-2"
+                  style={{
+                    textShadow:
+                      '0 4px 30px rgba(0, 0, 0, 1), 0 2px 10px rgba(0, 0, 0, 0.9), 2px 2px 6px rgba(0, 0, 0, 1)',
+                  }}
+                >
                   確かな技術で照らす
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-white font-light leading-relaxed drop-shadow-lg">
-                愛知県稲沢市を拠点に、三菱系FA機器・工作機械の<br className="hidden md:block" />
+              <p
+                className="text-xl md:text-2xl lg:text-3xl mb-8 text-white font-light leading-relaxed"
+                style={{
+                  textShadow:
+                    '0 3px 20px rgba(0, 0, 0, 1), 0 1px 5px rgba(0, 0, 0, 0.9)',
+                }}
+              >
+                愛知県稲沢市を拠点に、三菱系FA機器・工作機械の
+                <br className="hidden md:block" />
                 電気工事に特化した専門企業です
               </p>
             </div>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-10 max-w-4xl animate-fade-in-up animation-delay-200">
-              <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
+              <div className="bg-black/50 backdrop-blur-md p-4 rounded-lg border border-white/20 hover:bg-black/60 transition-all duration-300 shadow-2xl">
+                <div className="text-3xl md:text-4xl font-bold text-white mb-1">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
-                <p className="text-white text-sm drop-shadow-md">施工実績数</p>
+                <p 
+                  className="text-white text-sm font-medium"
+                  style={{
+                    textShadow: '0 2px 10px rgba(0, 0, 0, 0.9)',
+                  }}
+                >
+                  施工実績数
+                </p>
               </div>
-              <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
+              <div className="bg-black/50 backdrop-blur-md p-4 rounded-lg border border-white/20 hover:bg-black/60 transition-all duration-300 shadow-2xl">
+                <div className="text-3xl md:text-4xl font-bold text-white mb-1">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
-                <p className="text-white text-sm drop-shadow-md">創業年数</p>
+                <p 
+                  className="text-white text-sm font-medium"
+                  style={{
+                    textShadow: '0 2px 10px rgba(0, 0, 0, 0.9)',
+                  }}
+                >
+                  創業年数
+                </p>
               </div>
-              <div className="bg-white/15 backdrop-blur-md p-4 rounded-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-2xl">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1 drop-shadow-lg">
+              <div className="bg-black/50 backdrop-blur-md p-4 rounded-lg border border-white/20 hover:bg-black/60 transition-all duration-300 shadow-2xl">
+                <div className="text-3xl md:text-4xl font-bold text-white mb-1">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
-                <p className="text-white text-sm drop-shadow-md">有資格者数</p>
+                <p 
+                  className="text-white text-sm font-medium"
+                  style={{
+                    textShadow: '0 2px 10px rgba(0, 0, 0, 0.9)',
+                  }}
+                >
+                  有資格者数
+                </p>
               </div>
             </div>
 
@@ -57,7 +108,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8 animate-fade-in-up animation-delay-300">
               <Link
                 href="/contact"
-                className="group bg-yellow-400 text-gray-900 px-10 py-5 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all duration-300 text-center shadow-2xl hover:shadow-yellow-400/70 transform hover:-translate-y-1 hover:scale-105"
+                className="group bg-yellow-400 text-gray-900/90 px-10 py-5 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all duration-300 text-center shadow-2xl hover:shadow-yellow-400/70 transform hover:-translate-y-1 hover:scale-105"
               >
                 <span className="flex items-center justify-center gap-2">
                   お問い合わせ
@@ -81,17 +132,45 @@ export default function Home() {
 
             {/* Key Points */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start animate-fade-in-up animation-delay-400">
-              <div className="flex items-center gap-2 text-white bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/15 transition-all">
-                <svg className="w-5 h-5 text-yellow-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-center gap-2 text-white bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 hover:bg-black/60 transition-all shadow-lg">
+                <svg 
+                  className="w-5 h-5 text-white" 
+                  fill="currentColor" 
+                  viewBox="0 0 20 20"
+                  style={{
+                    filter: 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.9))',
+                  }}
+                >
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-sm md:text-base drop-shadow-md">三菱電機認定施工業者</span>
+                <span 
+                  className="text-sm md:text-base font-medium"
+                  style={{
+                    textShadow: '0 2px 8px rgba(0, 0, 0, 0.9)',
+                  }}
+                >
+                  三菱電機認定施工業者
+                </span>
               </div>
-              <div className="flex items-center gap-2 text-white bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/15 transition-all">
-                <svg className="w-5 h-5 text-yellow-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-center gap-2 text-white bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 hover:bg-black/60 transition-all shadow-lg">
+                <svg 
+                  className="w-5 h-5 text-white" 
+                  fill="currentColor" 
+                  viewBox="0 0 20 20"
+                  style={{
+                    filter: 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.9))',
+                  }}
+                >
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-sm md:text-base drop-shadow-md">無料見積もり</span>
+                <span 
+                  className="text-sm md:text-base font-medium"
+                  style={{
+                    textShadow: '0 2px 8px rgba(0, 0, 0, 0.9)',
+                  }}
+                >
+                  無料見積もり
+                </span>
               </div>
             </div>
           </div>
@@ -99,9 +178,24 @@ export default function Home() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-          <div className="flex flex-col items-center gap-2 text-white/70">
-            <span className="text-sm">Scroll</span>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex flex-col items-center gap-2 text-white">
+            <span 
+              className="text-sm"
+              style={{
+                textShadow: '0 2px 8px rgba(0, 0, 0, 0.8)',
+              }}
+            >
+              Scroll
+            </span>
+            <svg 
+              className="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+              style={{
+                filter: 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.8))',
+              }}
+            >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
           </div>
@@ -112,7 +206,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900/90 mb-4">
               株式会社ケーイーシーについて
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -135,56 +229,50 @@ export default function Home() {
       {/* Strengths */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900/90 mb-12">
             当社の強み
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Strength 1 */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            <div className="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-200 group">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-5 text-gray-900/90 group-hover:text-primary-700 transition-colors">
+                  三菱系機器に特化
+                </h3>
+                <div className="w-16 h-1 bg-primary-600 mx-auto mb-6 rounded-full"></div>
+                <p className="text-gray-600 leading-relaxed">
+                  三菱系FA機器・工作機械の電気工事に特化し、豊富な経験と専門知識を保有しています。
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-center mb-4 text-gray-900">
-                三菱系機器に特化
-              </h3>
-              <p className="text-gray-600 text-center">
-                三菱系FA機器・工作機械の電気工事に特化し、豊富な経験と専門知識を保有しています。
-              </p>
             </div>
 
             {/* Strength 2 */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+            <div className="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-200 group">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-5 text-gray-900/90 group-hover:text-primary-700 transition-colors">
+                  確かな技術力
+                </h3>
+                <div className="w-16 h-1 bg-primary-600 mx-auto mb-6 rounded-full"></div>
+                <p className="text-gray-600 leading-relaxed">
+                  <span className="coming-soon-badge mb-2 inline-block">Coming soon</span><br />
+                  技術力の詳細、資格保有者情報、技術者数などを掲載予定
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-center mb-4 text-gray-900">
-                確かな技術力
-              </h3>
-              <p className="text-gray-600 text-center">
-                <span className="coming-soon-badge mb-2 inline-block">Coming soon</span><br />
-                技術力の詳細、資格保有者情報、技術者数などを掲載予定
-              </p>
             </div>
 
             {/* Strength 3 */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            <div className="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-200 group">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-5 text-gray-900/90 group-hover:text-primary-700 transition-colors">
+                  迅速な対応
+                </h3>
+                <div className="w-16 h-1 bg-primary-600 mx-auto mb-6 rounded-full"></div>
+                <p className="text-gray-600 leading-relaxed">
+                  <span className="coming-soon-badge mb-2 inline-block">Coming soon</span><br />
+                  対応エリア、対応時間、緊急対応の可否などを掲載予定
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-center mb-4 text-gray-900">
-                迅速な対応
-              </h3>
-              <p className="text-gray-600 text-center">
-                <span className="coming-soon-badge mb-2 inline-block">Coming soon</span><br />
-                対応エリア、対応時間、緊急対応の可否などを掲載予定
-              </p>
             </div>
           </div>
         </div>
@@ -193,14 +281,14 @@ export default function Home() {
       {/* Services Overview */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900/90 mb-12">
             主要サービス
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Service 1 */}
             <div className="border-2 border-primary-200 p-8 rounded-lg hover:border-primary-500 transition">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900/90/90">
                 FA機器の電気工事
               </h3>
               <p className="text-gray-600 mb-4">
@@ -216,7 +304,7 @@ export default function Home() {
 
             {/* Service 2 */}
             <div className="border-2 border-primary-200 p-8 rounded-lg hover:border-primary-500 transition">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900/90/90">
                 工作機械の電気工事
               </h3>
               <p className="text-gray-600 mb-4">
@@ -232,7 +320,7 @@ export default function Home() {
 
             {/* Service 3 */}
             <div className="border-2 border-primary-200 p-8 rounded-lg hover:border-primary-500 transition">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900/90/90">
                 制御盤の設計・製作
               </h3>
               <p className="text-gray-600 mb-4">
@@ -243,7 +331,7 @@ export default function Home() {
 
             {/* Service 4 */}
             <div className="border-2 border-primary-200 p-8 rounded-lg hover:border-primary-500 transition">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900/90/90">
                 メンテナンス・保守
               </h3>
               <p className="text-gray-600 mb-4">
@@ -267,7 +355,7 @@ export default function Home() {
       {/* Case Studies Preview */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900/90 mb-12">
             施工事例
           </h2>
 
@@ -282,7 +370,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold mb-2 text-gray-900">FA機器の電気工事</h3>
+                <h3 className="text-lg font-bold mb-2 text-gray-900/90/90">FA機器の電気工事</h3>
                 <p className="text-sm text-gray-600">
                   工場自動化設備の施工事例
                 </p>
@@ -299,7 +387,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold mb-2 text-gray-900">産業用ロボット設置</h3>
+                <h3 className="text-lg font-bold mb-2 text-gray-900/90/90">産業用ロボット設置</h3>
                 <p className="text-sm text-gray-600">
                   ロボットアーム導入の施工事例
                 </p>
@@ -316,7 +404,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold mb-2 text-gray-900">制御盤の設計・製作</h3>
+                <h3 className="text-lg font-bold mb-2 text-gray-900/90/90">制御盤の設計・製作</h3>
                 <p className="text-sm text-gray-600">
                   カスタム制御盤の施工事例
                 </p>

@@ -58,7 +58,7 @@ export default function Contact() {
             {/* Contact Information */}
             <div className="lg:col-span-1">
               <div className="bg-white p-8 rounded-lg shadow-md mb-6">
-                <h2 className="text-2xl font-bold mb-6 text-gray-900">会社情報</h2>
+                <h2 className="text-2xl font-bold mb-6 text-gray-900/90/90">会社情報</h2>
 
                 <div className="space-y-6">
                   <div>
@@ -144,7 +144,7 @@ export default function Contact() {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <div className="bg-white p-8 rounded-lg shadow-md">
-                <h2 className="text-2xl font-bold mb-6 text-gray-900">お問い合わせフォーム</h2>
+                <h2 className="text-2xl font-bold mb-6 text-gray-900/90/90">お問い合わせフォーム</h2>
 
                 {!submitted ? (
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -281,7 +281,7 @@ export default function Contact() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    <h3 className="text-2xl font-bold text-gray-900/90 mb-4">
                       お問い合わせありがとうございます
                     </h3>
                     <p className="text-gray-600 mb-8">
@@ -314,7 +314,7 @@ export default function Contact() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            <h2 className="text-3xl font-bold text-center text-gray-900/90 mb-12">
               お問い合わせ前によくある質問
             </h2>
 
