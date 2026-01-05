@@ -183,7 +183,9 @@ npm run build
 
 ## サイトデザイン 参考サイト
 ヤマシタ電気株式会社（https://www.yamashita-ele.co.jp/）
+
 一電機株式会社（https://www.hajimedenki.co.jp/）
+
 株式会社神戸電機サービス（https://kobe-denki.co.jp/）
 
 ## ライセンス
