@@ -67,7 +67,7 @@ export default function Home() {
                 <div className="text-3xl md:text-4xl font-bold text-white mb-1">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
-                <p 
+                <p
                   className="text-white text-sm font-medium"
                   style={{
                     textShadow: '0 2px 10px rgba(0, 0, 0, 0.9)',
@@ -80,7 +80,7 @@ export default function Home() {
                 <div className="text-3xl md:text-4xl font-bold text-white mb-1">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
-                <p 
+                <p
                   className="text-white text-sm font-medium"
                   style={{
                     textShadow: '0 2px 10px rgba(0, 0, 0, 0.9)',
@@ -93,7 +93,7 @@ export default function Home() {
                 <div className="text-3xl md:text-4xl font-bold text-white mb-1">
                   <span className="coming-soon-badge text-xs">Coming soon</span>
                 </div>
-                <p 
+                <p
                   className="text-white text-sm font-medium"
                   style={{
                     textShadow: '0 2px 10px rgba(0, 0, 0, 0.9)',
@@ -133,9 +133,9 @@ export default function Home() {
             {/* Key Points */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start animate-fade-in-up animation-delay-400">
               <div className="flex items-center gap-2 text-white bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 hover:bg-black/60 transition-all shadow-lg">
-                <svg 
-                  className="w-5 h-5 text-white" 
-                  fill="currentColor" 
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="currentColor"
                   viewBox="0 0 20 20"
                   style={{
                     filter: 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.9))',
@@ -143,7 +143,7 @@ export default function Home() {
                 >
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span 
+                <span
                   className="text-sm md:text-base font-medium"
                   style={{
                     textShadow: '0 2px 8px rgba(0, 0, 0, 0.9)',
@@ -153,9 +153,9 @@ export default function Home() {
                 </span>
               </div>
               <div className="flex items-center gap-2 text-white bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 hover:bg-black/60 transition-all shadow-lg">
-                <svg 
-                  className="w-5 h-5 text-white" 
-                  fill="currentColor" 
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="currentColor"
                   viewBox="0 0 20 20"
                   style={{
                     filter: 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.9))',
@@ -163,7 +163,7 @@ export default function Home() {
                 >
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span 
+                <span
                   className="text-sm md:text-base font-medium"
                   style={{
                     textShadow: '0 2px 8px rgba(0, 0, 0, 0.9)',
@@ -176,30 +176,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-          <div className="flex flex-col items-center gap-2 text-white">
-            <span 
-              className="text-sm"
-              style={{
-                textShadow: '0 2px 8px rgba(0, 0, 0, 0.8)',
-              }}
-            >
-              Scroll
-            </span>
-            <svg 
-              className="w-6 h-6" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-              style={{
-                filter: 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.8))',
-              }}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-        </div>
+
       </section>
 
       {/* Company Introduction */}
