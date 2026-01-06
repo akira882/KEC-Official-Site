@@ -31,8 +31,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80"
-                  alt="工場の自動化設備"
+                  src="https://images.unsplash.com/photo-1581092921461-eab62496096b?auto=format&fit=crop&w=800&q=80"
+                  alt="FA機器の配線作業"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -63,7 +63,7 @@ export default function CaseStudies() {
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
                   src="https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=800&q=80"
-                  alt="産業用ロボットアーム"
+                  alt="産業用ロボットの設置・配線"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -93,8 +93,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="/images/case-study-cnc.png"
-                  alt="工作機械とCNC制御"
+                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80"
+                  alt="工作機械の電気保守点検"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -124,8 +124,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80"
-                  alt="電気制御盤と配線"
+                  src="https://images.unsplash.com/photo-1621905251189-08b9ebd84f69?auto=format&fit=crop&w=800&q=80"
+                  alt="制御盤内の配線作業"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -155,8 +155,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80"
-                  alt="製造ラインと生産設備"
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80"
+                  alt="生産ラインの点検作業"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -186,8 +186,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=800&q=80"
-                  alt="工場内の機械設備"
+                  src="https://images.unsplash.com/photo-1504384308090-c54be3855091?auto=format&fit=crop&w=800&q=80"
+                  alt="工場設備の電気工事"
                   className="w-full h-full object-cover"
                 />
               </div>
