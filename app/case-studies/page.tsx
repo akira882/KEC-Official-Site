@@ -31,8 +31,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="/images/case-study-1-manual.jpg"
-                  alt="FA機器の配線作業"
+                  src="/images/case-study_01.png"
+                  alt="制御盤の設置"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -62,8 +62,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=800&q=80"
-                  alt="産業用ロボットの設置・配線"
+                  src="/images/case-study_02.png"
+                  alt="モーター配線点検"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -93,8 +93,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="/images/CaseStudy_03.png"
-                  alt="工作機械の電気保守点検"
+                  src="/images/case-study_03.png"
+                  alt="大規模工場における電力幹線および配電設備の敷設工事"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -124,8 +124,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1621905251189-08b9ebd84f69?auto=format&fit=crop&w=800&q=80"
-                  alt="制御盤内の配線作業"
+                  src="/images/case-study_04.png"
+                  alt="FA設備向けの新設分電盤または配電盤の完成後の全景"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -155,8 +155,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80"
-                  alt="生産ラインの点検作業"
+                  src="/images/case-study_05.png"
+                  alt="工場の新設ラインにおけるケーブルトレイおよび配管工事の完了後の様子"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -186,8 +186,8 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1504384308090-c54be3855091?auto=format&fit=crop&w=800&q=80"
-                  alt="工場設備の電気工事"
+                  src="/images/case-study_06.png"
+                  alt="FAシステムと連動する屋外キュービクル（高圧受電設備）の設置完了後の様子"
                   className="w-full h-full object-cover"
                 />
               </div>
