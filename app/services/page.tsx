@@ -22,11 +22,12 @@ export default function Services() {
             {/* Service 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
               <div className="md:flex">
-                <div className="md:w-1/3 bg-gray-200 relative min-h-[200px] flex items-center justify-center">
-                  <div className="text-center p-4">
-                    <span className="coming-soon-badge mb-2 inline-block">Coming soon</span>
-                    <p className="text-gray-500 font-bold">FA機器の電気工事<br />イメージ画像</p>
-                  </div>
+                <div className="md:w-1/3 relative min-h-[250px]">
+                  <img
+                    src="/images/service-fa-setup.png"
+                    alt="FA機器の電気工事"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                 </div>
                 <div className="md:w-2/3 p-8">
                   <h4 className="text-xl font-bold mb-4 text-gray-900/90/90">三菱系FA機器の設置・配線・メンテナンス</h4>
@@ -52,11 +53,12 @@ export default function Services() {
             {/* Service 2 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
               <div className="md:flex md:flex-row-reverse">
-                <div className="md:w-1/3 bg-gray-200 relative min-h-[200px] flex items-center justify-center">
-                  <div className="text-center p-4">
-                    <span className="coming-soon-badge mb-2 inline-block">Coming soon</span>
-                    <p className="text-gray-500 font-bold">工作機械の電気工事<br />イメージ画像</p>
-                  </div>
+                <div className="md:w-1/3 relative min-h-[250px]">
+                  <img
+                    src="/images/service-machine-tool.png"
+                    alt="工作機械の電気工事"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                 </div>
                 <div className="md:w-2/3 p-8">
                   <h4 className="text-xl font-bold mb-4 text-gray-900/90/90">工作機械の電気設備工事</h4>
@@ -82,11 +84,12 @@ export default function Services() {
             {/* Service 3 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
               <div className="md:flex">
-                <div className="md:w-1/3 bg-gray-200 relative min-h-[200px] flex items-center justify-center">
-                  <div className="text-center p-4">
-                    <span className="coming-soon-badge mb-2 inline-block">Coming soon</span>
-                    <p className="text-gray-500 font-bold">制御盤の設計・製作<br />イメージ画像</p>
-                  </div>
+                <div className="md:w-1/3 relative min-h-[250px]">
+                  <img
+                    src="/images/service-control-panel.png"
+                    alt="制御盤の設計・製作"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                 </div>
                 <div className="md:w-2/3 p-8">
                   <h4 className="text-xl font-bold mb-4 text-gray-900/90/90">カスタム制御盤の設計・製作</h4>
@@ -111,11 +114,12 @@ export default function Services() {
             {/* Service 4 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
               <div className="md:flex md:flex-row-reverse">
-                <div className="md:w-1/3 bg-gray-200 relative min-h-[200px] flex items-center justify-center">
-                  <div className="text-center p-4">
-                    <span className="coming-soon-badge mb-2 inline-block">Coming soon</span>
-                    <p className="text-gray-500 font-bold">メンテナンス・保守<br />イメージ画像</p>
-                  </div>
+                <div className="md:w-1/3 relative min-h-[250px]">
+                  <img
+                    src="/images/service-maintenance.png"
+                    alt="メンテナンス・保守"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                 </div>
                 <div className="md:w-2/3 p-8">
                   <h4 className="text-xl font-bold mb-4 text-gray-900/90/90">定期メンテナンス・緊急対応</h4>
