@@ -93,7 +93,7 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1513828742322-1e7a00e2ef3e?auto=format&fit=crop&w=800&q=80"
+                  src="/images/case-study-cnc.png"
                   alt="工作機械とCNC制御"
                   className="w-full h-full object-cover"
                 />
