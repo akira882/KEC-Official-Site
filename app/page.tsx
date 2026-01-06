@@ -341,15 +341,15 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80"
-                  alt="工場の自動化設備"
+                  src="case-study_01.png"
+                  alt="制御盤の配線作業"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold mb-2 text-gray-900/90/90">FA機器の電気工事</h3>
+                <h3 className="text-lg font-bold mb-2 text-gray-900/90/90">FA制御盤配線</h3>
                 <p className="text-sm text-gray-600">
-                  工場自動化設備の施工事例
+                  制御盤配線作業の施工事例
                 </p>
               </div>
             </div>
@@ -358,15 +358,15 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=800&q=80"
-                  alt="産業用ロボットアーム"
+                  src="case-study_02.png"
+                  alt="稼働中のFAラインにおけるセンサー配線またはモーター配線点検"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold mb-2 text-gray-900/90/90">産業用ロボット設置</h3>
+                <h3 className="text-lg font-bold mb-2 text-gray-900/90/90">FAライン点検</h3>
                 <p className="text-sm text-gray-600">
-                  ロボットアーム導入の施工事例
+                  モーター配線点検の施工事例
                 </p>
               </div>
             </div>
@@ -375,15 +375,15 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80"
-                  alt="電気制御盤と配線"
+                  src="case-study_03.png"
+                  alt="大規模工場における電力幹線および配電設備の敷設工事"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold mb-2 text-gray-900/90/90">制御盤の設計・製作</h3>
+                <h3 className="text-lg font-bold mb-2 text-gray-900/90/90">電力幹線敷設工事</h3>
                 <p className="text-sm text-gray-600">
-                  カスタム制御盤の施工事例
+                  配電設備敷設の施工事例
                 </p>
               </div>
             </div>
