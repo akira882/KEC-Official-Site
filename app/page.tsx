@@ -341,7 +341,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="case-study_01.png"
+                  src="/images/case-study_01.png"
                   alt="制御盤の配線作業"
                   className="w-full h-full object-cover"
                 />
@@ -358,7 +358,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="case-study_02.png"
+                  src="/images/case-study_02.png"
                   alt="稼働中のFAラインにおけるセンサー配線またはモーター配線点検"
                   className="w-full h-full object-cover"
                 />
@@ -375,7 +375,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="case-study_03.png"
+                  src="/images/case-study_03.png"
                   alt="大規模工場における電力幹線および配電設備の敷設工事"
                   className="w-full h-full object-cover"
                 />
