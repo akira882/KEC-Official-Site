@@ -31,7 +31,7 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1581092921461-eab62496096b?auto=format&fit=crop&w=800&q=80"
+                  src="/images/case-study-1-manual.jpg"
                   alt="FA機器の配線作業"
                   className="w-full h-full object-cover"
                 />
