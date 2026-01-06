@@ -93,7 +93,7 @@ export default function CaseStudies() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80"
+                  src="/images/CaseStudy_03.png"
                   alt="工作機械の電気保守点検"
                   className="w-full h-full object-cover"
                 />
