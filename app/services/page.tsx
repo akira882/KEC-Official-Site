@@ -6,7 +6,7 @@ export default function Services() {
       {/* Page Header */}
       <section className="bg-gradient-to-r from-primary-700 to-primary-900 text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">サービス・強み</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">事業内容</h1>
           <p className="text-xl text-primary-100">Services & Strengths</p>
         </div>
       </section>
@@ -14,9 +14,6 @@ export default function Services() {
       {/* Main Services (Moved to Top, Renamed to 事業内容) */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900/90 mb-12">
-            事業内容
-          </h2>
 
           <div className="max-w-5xl mx-auto space-y-8">
             {/* Service 1 */}
@@ -159,7 +156,7 @@ export default function Services() {
             {/* Strength 1 */}
             <div className="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-300 group">
               <h3 className="text-2xl font-bold mb-5 text-gray-900/90 group-hover:text-primary-700 transition-colors">
-                三菱系機器に<br className="hidden md:block" />特化した専門性
+                三菱系機器への専門性
               </h3>
               <div className="w-20 h-1 bg-primary-600 mb-6 rounded-full"></div>
               <p className="text-gray-600 mb-6 leading-relaxed">
